@@ -7,6 +7,7 @@ public class App {
         SumaNumeroConsecutivos sumaObj = new SumaNumeroConsecutivos();
         PotenciaNumero potenciaObj = new PotenciaNumero();
         SumaDigitos sumaDigitosObj = new SumaDigitos();
+        Fibonacci fib = new Fibonacci();
 
         System.out.print("Ingrese un número para la suma de números consecutivos: ");
         int numeroSuma = scanner.nextInt();
@@ -21,6 +22,10 @@ public class App {
         System.out.print("Ingrese un número para la suma de sus dígitos: ");
         int numeroDigitos = scanner.nextInt();
         System.out.println("Suma de dígitos de " + numeroDigitos + ": " + sumaDigitosObj.sumaDigitos(numeroDigitos));
+
+        System.out.println("Ingrese un número para calcular método fibonacci: ");
+        int n= scanner.nextInt();
+        System.out.println("Fibonacci de "+n+"= "+fib.fibonacci(n));
 
     }
 }
